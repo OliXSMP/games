@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #111;
+}
+
+header {
+    background-color: #1d1d1d;
+    color: #ECF0F1;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #ECF0F1; /* Set the color to white */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a.modern-button,
+.c-button {
+    min-width: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    appearance: none;
+    border: none;
+    border-radius: 5px;
+    color: #ECF0F1;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s ease; /* Smooth transition for background color */
+}
+
+a.modern-button {
+    background: #2c2c2c;
+}
+
+.c-button {
+    background: #2c2c2c;
+}
+
+a.modern-button:hover,
+.c-button:hover {
+    background: #2abe0c; /* Green color when hovered */
+}
+
+#olixLogo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 32px;
+    height: 32px;
+    object-fit: cover; /* Ensure the logo covers the specified area */
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: #1d1d1d;
+    color: #ECF0F1;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 1570px) {
+    a.modern-button,
+    .c-button {
+        width: 48%; /* Set the button width to less than 50% to ensure both buttons fit in one line */
+        margin: 5px; /* Add margin to create space between buttons */
+        margin-top: 1150px;
+    }
+}

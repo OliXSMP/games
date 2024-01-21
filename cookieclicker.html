@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <a href="index.html"><img src="olix_smp_logo1.png" alt="OliX Logo" id="olixLogo"></a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OliXGames</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>Cookie Clicker</h1>
+</header>
+
+<!-- Game Section -->
+<section>
+    <button class="c-button">Click To Open Game</button>
+    <script>
+        var urlObj = new window.URL(window.location.href);
+        var url = "https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/1ee20621-61bc-4ec8-a8ec-5e839c2e6edc/cookie-clicker-2.xml";
+
+        if (url) {
+            var win;
+
+            document.querySelector('button').onclick = function() {
+                if (win) {
+                    win.focus();
+                } else {
+                    win = window.open();
+                    win.document.body.style.margin = '0';
+                    win.document.body.style.height = '100vh';
+                    var iframe = win.document.createElement('iframe');
+                    iframe.style.border = 'none';
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100%';
+                    iframe.style.margin = '0';
+                    iframe.src = url;
+                    win.document.body.appendChild(iframe);
+
+                    var interval = setInterval(function() {
+                        if (win.closed) {
+                            clearInterval(interval);
+                            win = undefined;
+                        }
+                    }, 500);
+                }
+            };
+        }
+    </script>
+
+<footer>
+    © 2024 OliXGames. All rights reserved.
+</footer>
+
+</body>
+</html>
