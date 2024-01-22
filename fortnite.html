@@ -16,7 +16,13 @@
 
 <!-- Game Section -->
 <section>
-    <a href="https://www.xbox.com/en-GB/play/games/fortnite/BT5P2X999VH2" target="_blank" class="c-button"><button>Click To Open Game</button></a>
+    <button class="c-button" id="openGameButton">Click To Open Game</button>
+    <script>
+        document.getElementById('openGameButton').onclick = function() {
+            window.location.href = "https://www.xbox.com/en-GB/play/games/fortnite/BT5P2X999VH2";
+        };
+    </script>
+</section>
 
 <footer>
     © 2024 OliXGames. All rights reserved.
