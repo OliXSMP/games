@@ -17,6 +17,7 @@
 <!-- Game Section -->
 <section>
     <button class="c-button" id="openGameButton">Xbox Cloud Gaming | Click To Open Game</button>
+    <button class="c-button" id="openGameButton2">Amazon Luna | Click To Open Game</button>
     <button class="c-button" id="openGameButton2">GeForce NOW | Click To Open Game</button>
     <script>
         document.getElementById('openGameButton').onclick = function() {
@@ -24,6 +25,9 @@
         };
         document.getElementById('openGameButton2').onclick = function() {
             window.open("https://play.geforcenow.com/games?game-id=46bfab06-d864-465d-9e56-2d9e45cdee0a&lang=en_GB&asset-id=01_94ff5082-1d9e-40a3-9829-9a1abcbea7cc", '_blank');
+        };
+        document.getElementById('openGameButton3').onclick = function() {
+            window.open("https://luna.amazon.co.uk/detail/B0BTRVRN6M", '_blank');
         };
     </script>
 </section>
