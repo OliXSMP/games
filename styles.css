@@ -68,6 +68,11 @@ a.modern-button:hover,
     object-fit: cover; /* Ensure the logo covers the specified area */
 }
 
+#multiplayerMessage {
+    color: #ECF0F1; /* Set the color to white */
+    margin-bottom: 20px; /* Add some margin below the message for spacing */
+}
+
 .center-content {
     display: flex;
     flex-direction: column;
